@@ -37,6 +37,7 @@ img {
     cursor: pointer;
     display: inline-block;
     border-radius: 25px;
+    
 }
 
 .gradient-button:hover {

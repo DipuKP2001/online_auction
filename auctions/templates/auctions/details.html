@@ -38,7 +38,7 @@
             {% if bid.user.username == user.username %}
             You Won The Auction!
             {% else %}
-            <strong>{{ bid.user.username }}</strong> won, with a bid of <strong>${{ bid.bidValue }}</strong>
+            <strong>{{ bid.user.username }}</strong> won, with a bid of <strong>Rs.{{ bid.bidValue }}</strong>
             {% endif %}
         </div>
 
