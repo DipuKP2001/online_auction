@@ -14,7 +14,7 @@
         {{ item.description }}
     </div>
     <div class="bid">
-        Start Bid : <strong>${{ item.startBid }}</strong>
+        Start Bid : <strong>Rs: {{ item.startBid }}</strong>
     </div>
     {% for bid in bids %}
     <div class="text-center">{{ bid.user.username }} bid <strong>{{ bid.bidValue }}</strong> at
@@ -48,7 +48,7 @@
         <form action="{% url 'bid' item.id %}" method="post">
             {% csrf_token %}
             <div class="form-group">
-                <input type="number" name="bid" class="form-control" placeholder="Bid" step=".01">
+                <input type="number" name="bid" class="form-control" placeholder="Bid" step=".1" required>
             </div>
             <div class="row justify-content-around">
                 <button class="btn btn-primary" type="submit">Place Bid</button>
@@ -104,7 +104,7 @@
             <input type="hidden" name="item" value="{{ item.id }}">
             <input type="hidden" value="{% if item in user.watchlist.all %}0{% else %}1{% endif %}" name="status">
             <button class="gradient-button watchlist" type="submit">
-                {% if item in user.watchlist.all %}Remove from{% else %}Add to{% endif %} Watchlist
+                {% if item in user.watchlist.all %}Remove from{% else %}Add to{% endif %} Wishlist
             </button>
         </form>
         {% endif %}

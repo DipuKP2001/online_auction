@@ -1,7 +1,7 @@
 {% extends "auctions/layout.html" %}
 
 {% block body %}
-<h2 class="py-3 m-3">Auction Listings</h2>
+<h2 class="py-3 m-3">Auction Items</h2>
 
 <div class="items-list">
     {% for obj in objects %}
@@ -11,7 +11,7 @@
             <img src="{{ obj.imageUrl }}" alt="Loading...">
             <div class="details">
                 <h5>{{ obj.name }}</h5>
-                <h6>Price: $<strong>{{ obj.startBid }}</strong></h6>
+                <h6>Price: Rs <strong>{{ obj.startBid }}</strong></h6>
                 <small>Created: <strong>{{ obj.date|date:"d-m-Y" }}</strong></small><br>
                 {% if obj.active %}
                 <span class="badge status--active">Active</span>
