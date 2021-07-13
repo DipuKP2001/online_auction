@@ -5,20 +5,16 @@
 ![GitHub forks](https://img.shields.io/github/forks/shaw8wit/Auction?style=plastic)
 ![GitHub watchers](https://img.shields.io/github/watchers/shaw8wit/Auction?style=plastic)
 
-![Demo Screen](https://github.com/shaw8wit/Auction/blob/master/screenshots/watchlist.png)
 
-A fully functional Auction website in Django. With configured admin panel.
-
-View all screenshots [here](https://github.com/shaw8wit/Auction/blob/master/screenshots/)
 
 ## About
-+ This is a dummy-website for holding Auctions.
-+ Users can view listings, its bids and comments without signing in.
-+ To place a Listing for auction and to bid on other auctions users have to register and login.
-+ In addition to the above users can also add listings to watchlist.
-+ A listings bidding can be stopped only by its author at any time making it inactive.
-+ The inactive listing is same as the active one except that the bidding has now stopped.
-+ Users can add categories and filter listings according to the categories.
++ This is a website for holding Auctions.
++ Users can view products, its bids and comments without signing in.
++ To place a product for auction and to bid on other auctions users have to register and login.
++ In addition to the above users can also add products to watchlist.
++ A product bidding can be stopped only by its author at any time making it inactive.
++ The inactive product is same as the active one except that the bidding has now stopped.
++ Users can add categories and filter products according to the categories.
 + Appropriate alert messages are shown for actions.
 
 ## Database
